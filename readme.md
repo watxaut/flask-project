@@ -1,10 +1,10 @@
-# Knowledge Prerequisites
+# Prerequisites
 * Python lists - Dictionaries
 * Object oriented programming (python classes)
-* Python Decorators (sort of required, at least have a look)
-* github account!
+* Github account!
+* Programs listed below installed!
 
-# What will you learn at the end of the lesson
+# What will (should..?) you know at the end of the lesson
 * Create a git repo
 * Decorators? Decorators
 * Create a Flask application
@@ -118,6 +118,18 @@ def return_post():
 
 app.run(port=5000)
 ```
+
+## Lets add this sheet to github
+* Create a project in github
+* in the root folder of your project in the terminal, type: `git init`
+* go to github and follow the instructions to add the local repo or follow this:
+```bash
+git add .
+git commit -m "First commit"
+git remote add origin remote repository URL
+git push -u origin master
+``` 
+
 
 # Add data management to Flask
 ```python
