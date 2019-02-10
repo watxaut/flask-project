@@ -9,7 +9,7 @@
 * Sourcetree (recommended): https://www.sourcetreeapp.com/
 * Postman: https://www.getpostman.com/products
 * Pycharm community IDE (recommended): https://www.jetbrains.com/pycharm/download/
-* Other IDEs: Atom/Visual Studio Code/Sublime Text
+    * Other IDEs: Atom/Visual Studio Code/Sublime Text
 
 
 ## Dependencies - Virtual Environment
@@ -34,6 +34,10 @@ to be pushed (e.g. virtual Env)
 
 There is one webpage that generates this file for you, kinda helpful:
 https://www.gitignore.io/
+
+# Concepts
+## HTTP Verbs
+![HTTP Verbs](/screenshots/httpverbs.png)
 
 ## TestDrivenDevelopment
 TDD - BDD
