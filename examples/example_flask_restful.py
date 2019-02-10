@@ -1,22 +1,14 @@
 from flask import Flask, request  # , jsonify   # no need to jsonify, because Flask RESTful does it for us
 from flask_restful import Resource, Api  # resource is everything that the API can return
-from flask_jwt import JWT, jwt_required
-
-from security import authenticate, identity
 
 app = Flask(__name__)
 
-app.secret_key = "jose"
-
 api = Api(app)
-
-jwt = JWT(app, authenticate, identity)  # /auth
 
 items = []
 
 
 class Item(Resource):
-    @jwt_required()
     def get(self, name):
         item = next(filter(lambda x: x["name"] == name, items), None)  # give next item, else None
         return {"item": item}, 200 if item is not None else 404
@@ -30,11 +22,6 @@ class Item(Resource):
         item = {'name': name, 'price': request_data["price"]}
         items.append(item)
         return item, 201  # 201 means created
-
-    def delete(self, name):
-        global items
-        items = list(filter(lambda x: x["name"] != name, items))
-        return {"message": "item {} deleted".format(name)}
 
 
 class ItemList(Resource):
