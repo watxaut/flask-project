@@ -18,7 +18,7 @@ stores = [
 
 @app.route("/")
 def home():
-    # Flash automatically looks at the 'templates' folder, very important to have the same name
+    # Flash automatically looks at the 'templates' folder, very important to have the same folder name
     return render_template("index.html")
 
 
