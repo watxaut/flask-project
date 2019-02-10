@@ -2,6 +2,7 @@
 * Python lists - Dictionaries
 * Object oriented programming (python classes)
 * Python Decorators (sort of required, at least have a look)
+* github account!
 
 # What will you learn at the end of the lesson
 * Create a git repo
