@@ -1,4 +1,4 @@
-This "Flask Project" repository is intended to give a class about how to create a Flask app with Python. There is also some advanced Python programming (decorators), some tips about git and some bad jokes.
+This "Flask Project" repository is intended to teach about how to create a Flask app with Python. There is also some advanced Python programming (decorators), some tips about git and some bad jokes.
 
 # Prerequisites
 * Python lists - Dictionaries
